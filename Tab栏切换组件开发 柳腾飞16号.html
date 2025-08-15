@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab栏切换组件</title>
+    <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+    <div class="tab-container">
+        <h1 >小米SU7</h1>
+        <div class="tab-header">
+            <ul>
+                <li class="tab-link" data-tab="tab1">商品介绍</li>
+                <li class="tab-link" data-tab="tab2">规格与型号</li>
+                <li class="tab-link" data-tab="tab3">售后保障</li>
+                <li class="tab-link" data-tab="tab4">商品评价</li>
+                <li class="tab-link" data-tab="tab5">手机社区</li>
+            </ul>
+        </div>
+        <div class="tab-content">
+            <div id="tab1" class="tab-pane">
+                <h2>小米SU7 - 重新定义智能电动汽车</h2>
+                
+                <div class="product-intro">
+                    <div class="intro-overview">
+                        <div class="overview-text">
+                            <p class="highlight">小米SU7是小米汽车有限公司推出的首款C级高性能生态科技轿车，定位为中大型纯电轿车。</p>
+                            <div class="key-specs">
+                                <div class="spec-item">
+                                    <span class="spec-icon">⚡</span>
+                                    <span class="spec-value">700km</span>
+                                    <span class="spec-label">CLTC续航</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">🏎️</span>
+                                    <span class="spec-value">2.78s</span>
+                                    <span class="spec-label">零百加速</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">🔄</span>
+                                    <span class="spec-value">0.195Cd</span>
+                                    <span class="spec-label">风阻系数</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="overview-image">
+                            <img src="su1.jpg" alt="小米SU7全景展示" class="main-image">
+                          
+                        </div>
+                    </div>
+                    
+                    <div class="feature-tabs">
+                        <div class="feature-content">
+                            <div id="design" class="feature-section active">
+                                <h3><i class="icon-design"></i> 外观设计</h3>
+                                <div class="feature-grid">
+                                    <div class="feature-item">
+                                        <h4>黄金比例车身</h4>
+                                        <p>采用3倍轮轴比和2倍轮高比的比例设计，整车视觉黄金比例协调，具有低趴运动的跑车姿态。</p>
+                                        <img src="su3.jpg" alt="车身比例">
+                                    </div>
+                                    <div class="feature-item">
+                                        <h4>空气动力学设计</h4>
+                                        <p>车身线条简洁流畅，型面富有力量感与层次感，溜背式设计和G4连续曲率的车身轮廓，风阻系数低至0.195Cd。</p>
+                                        <img src="su4.jpg" alt="空气动力学">
+                                    </div>
+                                    <div class="feature-item">
+                                        <h4>灯光艺术</h4>
+                                        <p>前"水滴型大灯"采用圆角多边形矩阵式造型，内部类似"米"字形灯腔结构；尾部光环尾灯由360颗超红光LED组成。</p>
+                                        <img src="su5.jpg" alt="车灯设计">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                           
+                            
+                            <!-- 其他特性部分 -->
+                        </div>
+                    </div>
+                    
+                    <div class="color-options">
+                        <h3>多彩选择</h3>
+                        <div class="color-grid">
+                            <div class="color-item">
+                                <div class="color-swatch" style="background-color: #1e90ff;"></div>
+                                <span>海湾蓝</span>
+                                <span>熔岩橙</span>
+                                <span>珍珠白</span>
+                                <span>橄榄绿</span>
+                              <img src="颜色.jpg" alt="color">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="price-table">
+                        <h3>版本与价格</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>版本</th>
+                                    <th>电池类型</th>
+                                    <th>续航里程</th>
+                                    <th>加速性能</th>
+                                    <th>价格</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>SU7</td>
+                                    <td>73.6kWh磷酸铁锂</td>
+                                    <td>700km</td>
+                                    <td>5.28s</td>
+                                    <td class="price">¥215,900</td>
+                                </tr>
+                                <!-- 其他版本 -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="tab2" class="tab-pane">
+                <h2>规格与配置</h2>
+                
+                <div class="specs-container">
+                    <!-- 版本选择器 -->
+                    <div class="version-selector">
+                        <button class="version-btn active" data-version="standard">SU7 标准版</button>
+                    </div>
+                    
+                    <!-- 规格详情 -->
+                    <div class="specs-details">
+                        <div class="specs-category">
+                            <h3><i class="icon-car"></i> 车身与安全</h3>
+                            <div class="specs-grid">
+                                <div class="spec-item">
+                                    <span class="spec-name">车身结构</span>
+                                    <p>小米SU7采用创新的"铠甲笼式"钢铝混合车身结构，集安全、轻量化和高刚性于一体</p>
+                                    <p>铠甲笼式钢铝混合车身</p>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-name">高强度材料占比</span>
+                                    <p>热成型钢：抗拉强度达2000MPa，用于A/B柱、门槛等关键防撞区域
+
+                                        7系铝合金：航空级材料，应用于车身覆盖件和底盘部件
+                                        
+                                        高强度钢：用于车身骨架主体结构
+                                        
+                                        镁合金：部分内饰支架，进一步减重</p>
+                                   
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-name">扭转刚度</span>
+                                    <p>整车扭转刚度,51000N·m/deg</p>
+                                   
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-name">主动安全配置</span>
+                                    正面碰撞吸能能力	,35%提升	,CNCAP五星标准
+                                
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="specs-category">
+                            <h3><i class="icon-battery"></i> 电池与续航</h3>
+                            <div class="specs-grid">
+                                <div class="spec-item">
+                                    <span class="spec-name">电池类型</span>
+                                    <p>73.6kWh 磷酸铁锂</p>
+                                    <p>94.3kWh 磷酸铁锂</p>
+                                    <p>101kWh 三元锂</p>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-name">CLTC续航</span>
+                                    <p>700km</p>
+                                    <p>830km</p>
+                                    <span class="spec-value version-max">800km</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-name">电池技术</span>
+                                    <p>CTB一体化电池技术，14层物理防护</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="specs-category">
+                            <h3><i class="icon-performance"></i> 性能表现</h3>
+                            <div class="specs-grid">
+                                <div class="spec-item">
+                                    <span class="spec-name">电机配置</span>
+                                    <p>后置单电机</p>
+                                        <p>双电机全轮驱动</p>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-name">最大功率</p>
+                                    <p>220kW</p>
+                                        <p>495kW</p>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-name">峰值扭矩</p>
+                                    <p>400N·m</span>
+                                        <p>838N·m</p>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-name">0-100km/h加速</p>
+                                    <p>5.28s</p>
+                                    <p>2.78s</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="specs-category">
+                            <h3><i class="icon-feature"></i> 特色配置</h3>
+                            <div class="feature-list">
+                                <div class="feature-item">
+                                    <i class="feature-icon">✓</i>
+                                    <span>16.1英寸3K中控大屏</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="feature-icon">✓</i>
+                                    <span>56英寸HUD抬头显示</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="feature-icon">✓</i>
+                                    <span>全粒面Nappa真皮座椅</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="feature-icon">✓</i>
+                                    <span>7.1.4杜比全景声音响</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 版本对比表格 -->
+                    <div class="comparison-table">
+                        <h3>版本对比</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>配置</th>
+                                    <th>SU7</th>
+                                    <th>SU7 Pro</th>
+                                    <th>SU7 Max</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>价格</td>
+                                    <td>¥215,900</td>
+                                    <td>¥245,900</td>
+                                    <td>¥299,900</td>
+                                </tr>
+                                <tr>
+                                    <td>电池容量</td>
+                                    <td>73.6kWh</td>
+                                    <td>94.3kWh</td>
+                                    <td>101kWh</td>
+                                </tr>
+                                <tr>
+                                    <td>续航里程(CLTC)</td>
+                                    <td>700km</td>
+                                    <td>830km</td>
+                                    <td>800km</td>
+                                </tr>
+                                <tr>
+                                    <td>电机配置</td>
+                                    <td>后置单电机</td>
+                                    <td>后置单电机</td>
+                                    <td>双电机全轮驱动</td>
+                                </tr>
+                                <tr>
+                                    <td>0-100km/h加速</td>
+                                    <td>5.28s</td>
+                                    <td>5.28s</td>
+                                    <td>2.78s</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="tab3" class="tab-pane">
+    <h2>售后保障</h2>
+    <div class="after-sales-content">
+        <div class="after-sales-header">
+           
+            <h3 class="after-sales-title">全方位售后保障，让您无忧购车</h3>
+        </div>
+        
+        <div class="after-sales-cards">
+         
+            <div class="after-sales-card">
+                <div class="card-icon">🔋</div>
+                <div class="card-content">
+                    <h4 class="card-title">电池关爱</h4>
+                    <p class="card-text">动力电池受损事故，因用户迟报案或无现场查勘保司不全赔，小米汽车减免差额费用。</p>
+                </div>
+            </div>
+            
+            <div class="after-sales-card">
+                <div class="card-icon">🚑</div>
+                <div class="card-content">
+                    <h4 class="card-title">事故救援</h4>
+                    <p class="card-text">车主基础权益之上加享 7x24h 事故类道路救援服务。</p>
+                </div>
+            </div>
+            
+            <div class="after-sales-card">
+                <div class="card-icon">🔧</div>
+                <div class="card-content">
+                    <h4 class="card-title">省心维修</h4>
+                    <p class="card-text">维修技术标准，原厂配件保障。</p>
+                </div>
+            </div>
+            
+           
+            <div class="after-sales-card highlight">
+                <div class="card-icon">🛠️</div>
+                <div class="card-content">
+                    <h4 class="card-title">免费基础保养</h4>
+                    <p class="card-text">每年 2 次免费基础保养，让您爱车时刻保持最佳状态。</p>
+                </div>
+            </div>
+            
+       
+            <div class="after-sales-card">
+                <div class="card-icon">📝</div>
+                <div class="card-content">
+                    <h4 class="card-title">快速理赔</h4>
+                    <p class="card-text">及时维修，无需垫付，简化理赔流程。</p>
+                </div>
+            </div>
+            
+       
+            <div class="after-sales-card">
+                <div class="card-icon">🎨</div>
+                <div class="card-content">
+                    <h4 class="card-title">免费喷漆</h4>
+                    <p class="card-text">每年 2 张免费喷漆券，小剐小蹭无需担心。</p>
+                </div>
+            </div>
+            
+            
+            <div class="after-sales-card">
+                <div class="card-icon">🚗</div>
+                <div class="card-content">
+                    <h4 class="card-title">免费维保取送车</h4>
+                    <p class="card-text">次数不限，上门取送，省心省力。</p>
+                </div>
+            </div>
+            
+            
+            <div class="after-sales-card">
+                <div class="card-icon">🔨</div>
+                <div class="card-content">
+                    <h4 class="card-title">免费上门补胎</h4>
+                    <p class="card-text">次数不限，随叫随到，出行无忧。</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="after-sales-details">
+            <h3 class="details-title">基础售后保障</h3>
+            <div class="details-list">
+                <div class="detail-item">
+                    <div class="detail-icon">✓</div>
+                    <p>整车 5 年 / 10 万公里质保</p>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-icon">✓</div>
+                    <p>关键零部件 8 年 / 16 万公里质保</p>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-icon">✓</div>
+                    <p>一年「车载网络服务包」免费使用权</p>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-icon">✓</div>
+                    <p>整车质保期内，因质量问题免费提供 7x24h 道路救援</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="after-sales-note">
+            <h4>注：</h4>
+            <p>部分服务需在小米汽车官方合作渠道购买保险服务后另行购买，详情请查看《小米汽车无忧服务包》。</p>
+            <p>上门补胎服务暂仅限有小米汽车官方交付中心的城市可使用。</p>
+        </div>
+    </div>
+</div>
+            <div id="tab4" class="tab-pane">
+                <h2>用户评价</h2>
+                
+                <div class="ratings-summary">
+                    <div class="overall-rating">
+                        <div class="rating-stars">
+                            ★★★★★
+                            <span class="rating-mask" style="width: 20%">★★★★★</span>
+                        </div>
+                        <span class="rating-value">4.8</span>
+                        <span class="rating-count">(1,258条评价)</span>
+                    </div>
+                    
+                    <div class="rating-details">
+                        <div class="rating-bar">
+                            <span class="rating-label">5星</span>
+                            <div class="bar-container">
+                                <div class="bar-fill" style="width: 78%"></div>
+                            </div>
+                            <span class="rating-percent">78%</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span class="rating-label">4星</span>
+                            <div class="bar-container">
+                                <div class="bar-fill" style="width: 15%"></div>
+                            </div>
+                            <span class="rating-percent">15%</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span class="rating-label">3星</span>
+                            <div class="bar-container">
+                                <div class="bar-fill" style="width: 5%"></div>
+                            </div>
+                            <span class="rating-percent">5%</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span class="rating-label">2星</span>
+                            <div class="bar-container">
+                                <div class="bar-fill" style="width: 1%"></div>
+                            </div>
+                            <span class="rating-percent">1%</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span class="rating-label">1星</span>
+                            <div class="bar-container">
+                                <div class="bar-fill" style="width: 1%"></div>
+                            </div>
+                            <span class="rating-percent">1%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-sort">
+                    <span class="sort-label">排序方式：</span>
+                    <button class="sort-btn active">最新</button>
+                    <button class="sort-btn">最有用</button>
+                    <button class="sort-btn">好评优先</button>
+                </div>
+                
+                <div class="review-list">
+                    <div class="review-item">
+                        <div class="review-header">
+                            <div class="user-info">
+                                <span class="user-avatar">张</span>
+                                <span class="user-name">张*</span>
+                            </div>
+                            <div class="review-rating">★★★★★ <span>5.0</span></div>
+                            <div class="review-date">2025-06-18</div>
+                        </div>
+                        <div class="review-content">
+                            <h3 class="review-title">外观设计惊艳，驾驶体验超出预期</h3>
+                            <p class="review-text">小米SU7的外观设计非常惊艳！车身比例协调，线条流畅，特别是溜背式设计和独特的车灯造型。驾驶体验超出预期，加速迅猛，操控精准。</p>
+                            <div class="review-images">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="review-item">
+                        <div class="review-header">
+                            <div class="user-info">
+                                <span class="user-avatar">李</span>
+                                <span class="user-name">李*</span>
+                            </div>
+                            <div class="review-rating">★★★★★ <span>5.0</span></div>
+                            <div class="review-date">2025-06-17</div>
+                        </div>
+                        <div class="review-content">
+                            <h3 class="review-title">内饰豪华，科技感十足</h3>
+                            <p class="review-text">内饰设计非常豪华，座椅采用全粒面Nappa真皮，坐感舒适。中控大屏和多屏协同功能非常实用，操作流畅，语音交互也很智能。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="review-item">
+                        <div class="review-header">
+                            <div class="user-info">
+                                <span class="user-avatar">王</span>
+                                <span class="user-name">王*</span>
+                            </div>
+                            <div class="review-rating">★★★★☆ <span>4.0</span></div>
+                            <div class="review-date">2025-06-16</div>
+                        </div>
+                        <div class="review-content">
+                            <h3 class="review-title">续航表现优秀，充电速度快</h3>
+                            <p class="review-text">电池续航表现优秀，标准版就能达到700km，完全满足日常使用需求。充电速度很快，半小时就能充到80%。</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-pagination">
+                    <button class="page-btn">上一页</button>
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <span class="page-ellipsis">...</span>
+                    <button class="page-btn">10</button>
+                    <button class="page-btn">下一页</button>
+                </div>
+            </div>
+            <div id="tab5" class="tab-pane">
+    <h2>手机社区</h2>
+    <div class="community-content">
+        <!-- 主内容区：帖子列表 -->
+        <main class="community-posts">
+            <h3>热门讨论</h3>
+            <div class="post-filters">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="hot">热门</button>
+                <button class="filter-btn" data-filter="new">最新</button>
+                <button class="filter-btn" data-filter="my">我的社区</button>
+            </div>
+            
+            <div class="post-list">
+                <!-- 帖子项 -->
+                <div class="post-item">
+                    <div class="post-author">
+                        <img src="OIP-C (1).webp" alt="用户头像" class="author-avatar">
+                        <span class="author-name">数码爱好者666</span>
+                    </div>
+                    <div class="post-content">
+                        <h4 class="post-title">小米SU7的续航表现到底如何？分享我的实际体验</h4>
+                        <p class="post-excerpt">最近提了小米SU7，开了半个月，聊聊我的感受。市区通勤续航基本无压力，高速上也能跑500多公里...</p>
+                        <div class="post-meta">
+                            <span class="post-time">2025-06-18 14:30</span>
+                            <span class="post-stats">
+                                <i class="icon-view"></i> 1,234
+                                <i class="icon-like"></i> 89
+                                <i class="icon-comment"></i> 35
+                            </span>
+                        </div>
+                    </div>
+                    <button class="post-like">
+                        <i class="icon-like-filled"></i> 赞
+                    </button>
+                </div>
+                
+                <!-- 更多帖子项 -->
+                <div class="post-item">
+                    <div class="post-author">
+                        <img src="OIP-C.webp" alt="用户头像" class="author-avatar">
+                        <span class="author-name">科技测评达人</span>
+                    </div>
+                    <div class="post-content">
+                        <h4 class="post-title">小米SU7智能座舱深度体验：比想象中更智能！</h4>
+                        <p class="post-excerpt">小米SU7的智能座舱体验真的惊艳到我了。中控大屏流畅度高，语音助手反应迅速，多屏协同也很实用...</p>
+                        <div class="post-meta">
+                            <span class="post-time">2025-06-17 09:15</span>
+                            <span class="post-stats">
+                                <i class="icon-view"></i> 987
+                                <i class="icon-like"></i> 65
+                                <i class="icon-comment"></i> 28
+                            </span>
+                        </div>
+                    </div>
+                    <button class="post-like">
+                        <i class="icon-like-outline"></i> 赞
+                    </button>
+                </div>
+            </div>
+            
+            <!-- 加载更多按钮 -->
+            <div class="load-more">
+                <button class="load-more-btn">加载更多</button>
+            </div>
+        </main>
+        
+        <!-- 侧边栏 -->
+        <aside class="community-sidebar">
+            <div class="sidebar-section">
+                <h3>热门话题</h3>
+                <ul class="topic-list">
+                    <li class="topic-item">
+                        <a href="#" class="topic-link">#小米SU7续航</a>
+                        <span class="topic-count">1258</span>
+                    </li>
+                    <li class="topic-item">
+                        <a href="#" class="topic-link">#智能座舱</a>
+                        <span class="topic-count">987</span>
+                    </li>
+                    <li class="topic-item">
+                        <a href="#" class="topic-link">#外观设计</a>
+                        <span class="topic-count">876</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="sidebar-section">
+                <h3>社区规则</h3>
+                <div class="rules-content">
+                    <p>1. 尊重他人，禁止人身攻击</p>
+                    <p>2. 请勿发布广告或无关信息</p>
+                    <p>3. 鼓励分享真实使用体验</p>
+                    <p>4. 违规内容将被删除</p>
+                </div>
+            </div>
+        </aside>
+    </div>
+</div>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    // 获取所有Tab标签和内容面板
+    const tabLinks = document.querySelectorAll(".tab-link");
+    const tabPanes = document.querySelectorAll(".tab-pane");
+    
+    /**
+     * 切换Tab函数
+     * @param {HTMLElement} targetLink - 被点击的Tab标签元素
+     */
+    function switchTab(targetLink) {
+        // 1. 移除所有Tab标签的active类
+        tabLinks.forEach(link => {
+            link.classList.remove("active");
+            // 移除aria-selected属性（无障碍支持）
+            link.removeAttribute("aria-selected");
+        });
+        
+        // 2. 隐藏所有内容面板
+        tabPanes.forEach(pane => {
+        pane.style.display = ""; // 移除内联display样式
+        pane.setAttribute("data-active", "false");
+        pane.setAttribute("aria-hidden", "true");
+    });
+    
+        
+        // 3. 激活当前Tab标签
+        targetLink.classList.add("active");
+        targetLink.setAttribute("aria-selected", "true");
+        
+        // 4. 获取目标内容面板ID
+        const targetTabId = targetLink.getAttribute("data-tab");
+        const targetPane = document.getElementById(targetTabId);
+        
+        // 5. 显示目标内容面板
+        if (targetPane) {
+            targetPane.setAttribute("data-active", "true");
+            targetPane.setAttribute("aria-hidden", "false");
+            
+            // 触发重绘以确保动画运行
+            void targetPane.offsetWidth;
+        }
+    }
+    
+    // 初始化：默认激活第一个Tab
+    if (tabLinks.length > 0) {
+        switchTab(tabLinks[0]);
+    }
+    
+    // 为每个Tab标签添加点击事件
+    tabLinks.forEach(link => {
+        link.addEventListener("click", function(e) {
+            e.preventDefault();
+            switchTab(this);
+        });
+        
+        // 添加键盘支持（无障碍）
+        link.addEventListener("keydown", function(e) {
+            if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                switchTab(this);
+            }
+        });
+    });
+});
+
+    </script>
+</body>
+</html>
